@@ -1,0 +1,322 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 0.8vw;
+}
+
+.boxcenter {
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+.row {
+    float: left;
+    width: 100%;
+}
+
+.mb {
+    margin-bottom: 30px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.mr {
+    margin-right: 2%;
+}
+
+.demo {
+    background-color: antiquewhite;
+    min-height: 100px;
+}
+
+.header {
+    background-color: aquamarine;
+    border: 1px rgb(25, 150, 92) solid;
+    color: blue;
+    border-radius: 5px;
+}
+
+.footer {
+    background-color: aquamarine;
+    border: 1px rgb(25, 150, 92) solid;
+    font-size: 0.8vw;
+    color: blue;
+    border-radius: 5px;
+    padding: 20px
+}
+
+.header h1 {
+    margin: 20px;
+    font-size: 1.2vw;
+}
+
+.menu {
+    background-color: black;
+    color: gainsboro;
+    border-radius: 5px;
+}
+
+.rightbox {
+    float: left;
+    width: 24%;
+}
+
+
+.leftbox {
+    float: left;
+    width: 74%;
+}
+
+.boxtitle {
+    color: #333;
+    padding: 10px;
+    background-color: #EEE;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 1px #CCC solid;
+}
+
+.boxcontent {
+    padding: 20px;
+    border-left: 1px #CCC solid;
+    border-right: 1px #CCC solid;
+    border-bottom: 1px #CCC solid;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    min-height: 200px;
+
+}
+
+.boxcontentmid {
+    border-left: 1px #CCC solid;
+    border-right: 1px #CCC solid;
+    border-bottom: 1px #CCC solid;
+    background-color: #EEE;
+}
+
+.boxfooter {
+    padding: 10px;
+    background-color: #EEE;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: 1px #CCC solid;
+    border-right: 1px #CCC solid;
+    border-bottom: 1px #CCC solid;
+
+}
+
+.banner {
+    min-height: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+.boxproduct {
+    float: left;
+    width: 32%;
+    min-height: 300px;
+    border: 1px #EEE solid;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.boxproduct .img {
+    min-height: 230px;
+    text-align: center;
+}
+
+.img img {
+    height: 220px
+}
+
+.menu ul {
+    padding: 10px;
+}
+
+.menu ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 0px 15px;
+}
+
+.menu ul li a {
+    color: gainsboro;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.menu ul li a:hover {
+    color: rgb(245, 245, 25);
+    font-size: 1vw;
+}
+
+.login-form {
+    line-height: 150%;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"],
+.form-content input[type="text"] {
+    width: 100%;
+    border: 1px #CCC solid;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+
+.login-form input[type="checkbox"] {
+    border-radius: 5px;
+}
+
+
+.login-form input[type="submit"],
+.form-content input[type="submit"],
+.form-content input[type="button"],
+.form-content input[type="reset"] {
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: white;
+    border: 1px solid #CCC;
+}
+
+.login-form input[type="submit"]:hover,
+.form-content input[type="submit"]:hover,
+.form-content input[type="reset"]:hover,
+.form-content input[type="button"]:hover 
+{
+    background-color: #CCC;
+}
+
+.login-form li a {
+    color: teal;
+    text-decoration: none;
+}
+
+
+.login-form li a:hover {
+    color: #093;
+    text-decoration: underline;
+}
+
+.menu-vertical ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+
+.menu-vertical ul li {
+    padding: 10px 20px;
+    background-color: #EEE;
+    border-bottom: 1px #CCC solid;
+}
+
+.menu-vertical ul li a {
+    color: #666;
+    text-decoration: none;
+}
+
+
+.menu-vertical ul li:hover {
+    background-color: #CCC;
+}
+
+.searchbox input[type="text"] {
+    width: 100%;
+    border: 1px #CCC solid;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.top10 img {
+    width: 20%;
+    height: 50px;
+    float: left;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px #CCC solid;
+}
+
+.top10 a {
+    color: #666;
+    text-decoration: none;
+
+}
+
+.top10 a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+
+/* Admin page */
+.header-admin {
+    background-color: #EEE;
+    border: 1px #CCC solid;
+    color: #666;
+    border-radius: 5px;
+    padding: 0px 10px;
+    font-size: 2vw;
+}
+
+.header-admin h1 {
+    font-size: 2vw;
+}
+
+.form-title {
+    background-color: #EEE;
+    border: 1px #CCC solid;
+    color: #666;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 2vw;
+}
+
+.form-content {
+    padding: 20px 0px;
+}
+
+.formListCategory table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.formListCategory table th{
+    padding: 20px;
+    background-color: #CCC;
+}
+/* 
+.formListCategory table th:nth-child(1){
+    width: 10%;
+    padding: 20px;
+    background-color: #CCC;
+}
+
+.formListCategory table th:nth-child(2){
+    width: 30%;
+    background-color: #CCC;
+
+}
+
+.formListCategory table th:nth-child(3){
+    width: 40%;
+    background-color: #CCC;
+
+}
+
+.formListCategory table th:nth-child(4){
+    width: 20%;
+    background-color: #CCC;
+
+} */
+
+.formListCategory table td{
+    padding: 10px 20px;
+    border: 1px #CCC solid;
+}
+
