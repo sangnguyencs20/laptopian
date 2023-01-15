@@ -87,14 +87,11 @@
             </div>
             <div class="boxcontentmid menu-vertical">
                 <ul>
-                    <li><a href="">Watch</a></li>
-                    <li><a href="">Laptop</a></li>
-                    <li><a href="">Phone</a></li>
-                    <li><a href="">Backpack</a></li>
-                    <li><a href="">Watch</a></li>
-                    <li><a href="">Laptop</a></li>
-                    <li><a href="">Phone</a></li>
-                    <li><a href="">Backpack</a></li>
+                    <?php
+                    foreach ($categoryList as $category) {
+                        echo '<li><a href="index.php?act=product&cateId=' . $category['id'] . '">' . $category['name'] . '</a></li>';
+                    }
+                    ?>
                 </ul>
             </div>
             <div class="boxfooter searchbox">
@@ -110,40 +107,15 @@
                 Top 10 Products
             </div>
             <div class="row boxcontent">
-                <div class="row mb10 top10">
-                    <img src="views/images/grayjordan.jpg" alt="">
-                    <a href="">Gray Jordan</a>
-                </div>
-                <div class="row mb10 top10"> <img src="views/images/grayjordan.jpg" alt="">
-                    <a href="">Gray Jordan 1</a>
-                </div>
-                <div class="row mb10 top10"> <img src="views/images/grayjordan.jpg" alt="">
-                    <a href="">Gray Jordan 2</a>
-                </div>
-                <div class="row mb10 top10"> <img src="views/images/grayjordan.jpg" alt="">
-                    <a href="">Gray Jordan 3</a>
-                </div>
-                <div class="row mb10 top10"> <img src="views/images/grayjordan.jpg" alt="">
-                    <a href="">Gray Jordan 4</a>
-                </div>
-                <div class="row mb10 top10"> <img src="views/images/grayjordan.jpg" alt="">
-                    <a href="">Gray Jordan 5</a>
-                </div>
-                <div class="row mb10 top10"> <img src="views/images/grayjordan.jpg" alt="">
-                    <a href="">Gray Jordan 6</a>
-                </div>
-                <div class="row mb10 top10"> <img src="views/images/grayjordan.jpg" alt="">
-                    <a href="">Gray Jordan 7</a>
-                </div>
-                <div class="row mb10 top10"> <img src="views/images/grayjordan.jpg" alt="">
-                    <a href="">Gray Jordan 8</a>
-                </div>
-                <div class="row mb10 top10"> <img src="views/images/grayjordan.jpg" alt="">
-                    <a href="">Gray Jordan 9</a>
-                </div>
-                <div class="row mb10 top10"> <img src="views/images/grayjordan.jpg" alt="">
-                    <a href="">Gray Jordan 9</a>
-                </div>
+                <?php
+                foreach ($productList as $product) {
+                    echo '<div class="row mb10 top10">
+                            <img src="./uploads/' . $product['img'] . '" alt="">
+                            <a href="index.php?act=productdetail&id=' . $product['id'] . '">' . $product['name'] . '</a>
+                        </div>';
+                }
+
+                ?>
             </div>
         </div>
     </div>

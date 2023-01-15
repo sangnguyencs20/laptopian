@@ -2,9 +2,10 @@
     include "./model/PDO.php";
     include "./model/product.php";
     include "./views/header.php";
-
+    include "./model/category.php";
     $productList = getProductHomePage();
-
+    $categoryList = getAllCategory();
+    $top10Product = getTop10Product();
     if(isset($_GET['act']) && $_GET['act']){
         $act = $_GET['act'];
         switch ($act) {
@@ -23,4 +24,3 @@
         include "views/home.php";
     }
     include "views/footer.php";
-?>
