@@ -33,7 +33,8 @@
                     extract($product);
                     $editProduct = "index.php?act=editProduct&id=" . $id;
                     $deleteProduct = "index.php?act=deleteProduct&id=" . $id;
-                    $imgPath = "../uploads" . $img;
+                    $imgPath = "../uploads/" . $img;
+
                     if (is_file($imgPath)) {
                         $imgShow = "<img src='$imgPath' height = '80'>";
                     } else {

@@ -15,6 +15,7 @@ function updateProduct($id, $name, $price, $img, $desc, $cateId)
     }
     pdo_execute($sql);
 }
+
 function deleteProduct($id)
 {
     $sql = "DELETE FROM product WHERE id = $id";
@@ -41,5 +42,10 @@ function getOneProduct($id)
 function getProductsByCateId($cateId)
 {
     $sql = "SELECT * FROM product WHERE cateId = $cateId";
+    return pdo_query($sql);
+}
+
+function getProductHomePage(){
+    $sql = "SELECT * FROM product ORDER BY id DESC LIMIT 0,9";
     return pdo_query($sql);
 }
