@@ -9,6 +9,12 @@
     if(isset($_GET['act']) && $_GET['act']){
         $act = $_GET['act'];
         switch ($act) {
+            case 'product':
+                $cateId = $_GET['cateId'];
+                $cateName  = getCateNameByCateId($cateId);
+                $productList = getProductsByCateId($cateId);
+                include "views/product.php";
+                break;
             case 'about':
                 include "views/about.php";
                 break;

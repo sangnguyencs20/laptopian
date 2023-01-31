@@ -33,7 +33,7 @@
         <ul>
             <?php
             foreach ($categoryList as $category) {
-                echo '<li><a href="index.php?act=productList&cateId=' . $category['id'] . '">' . $category['name'] . '</a></li>';
+                echo '<li><a href="index.php?act=product&cateId=' . $category['id'] . '">' . $category['name'] . '</a></li>';
             }
             ?>
         </ul>
