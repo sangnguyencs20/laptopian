@@ -49,3 +49,16 @@ function getProductHomePage(){
     $sql = "SELECT * FROM product ORDER BY id DESC LIMIT 0,9";
     return pdo_query($sql);
 }
+
+function getTop10Product(){
+    $sql = "SELECT * FROM product ORDER BY views DESC LIMIT 0,10";
+    return pdo_query($sql);
+}
+
+
+
+function getSameCateProduct($id){
+    $cate = getOneProduct($id)['cateId'];
+    $sql = "SELECT * FROM product WHERE id <> $id AND cateId = $cate ORDER BY id DESC LIMIT 0,5";
+    return pdo_query($sql);
+}
