@@ -97,6 +97,13 @@
     background-color: #EEE;
 }
 
+.boxcontentmid {
+    padding: 10px;
+    border-bottom: 1px #CCC solid;
+}
+
+
+
 .boxfooter {
     padding: 10px;
     background-color: #EEE;
@@ -121,6 +128,21 @@
     border: 1px #EEE solid;
     border-radius: 5px;
     margin-bottom: 20px;
+}
+
+.namePrice{
+    padding: 10px;
+}
+
+.boxproduct a {
+    color: #333;
+    text-decoration: none;
+}
+
+.boxproduct p{
+    font-size: 1.2vw;
+    font-weight: bold;
+    color: #333;
 }
 
 .boxproduct .img {
@@ -419,4 +441,14 @@
     to {
         opacity: 1
     }
+}
+
+
+
+.productDetailImg{
+    text-align: center;
+}
+
+.productDetailImg img {
+    width: 50%;
 }

@@ -15,6 +15,17 @@
             case 'contact':
                 include "views/contact.php";
                 break;
+            case 'productdetail':
+                if (!isset($_GET['id']) || $_GET['id'] > 0) {
+                    # code...
+                    $sameCateProduct = getSameCateProduct($_GET['id']);
+                    $productDetail = getOneProduct($_GET['id']);
+                    include "views/productdetail.php";
+                }
+                else {
+                    include "views/home.php";
+                }
+                break;
             default:
                 include "views/home.php";
                 break;
