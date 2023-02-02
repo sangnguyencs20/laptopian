@@ -39,8 +39,9 @@
         </ul>
     </div>
     <div class="boxfooter searchbox">
-        <form action="#" method="post">
-            <input type="text" name="" id="">
+        <form action="index.php?act=product" method="post">
+            <input type="text" name="keyword" id="">
+            <input type="submit" value = "Search" name = "Searching">
         </form>
     </div>
 </div>

@@ -55,8 +55,6 @@ function getTop10Product(){
     return pdo_query($sql);
 }
 
-
-
 function getSameCateProduct($id){
     $cate = getOneProduct($id)['cateId'];
     $sql = "SELECT * FROM product WHERE id <> $id AND cateId = $cate ORDER BY id DESC LIMIT 0,5";
@@ -64,6 +62,7 @@ function getSameCateProduct($id){
 }
 
 function getCateNameByCateId($cateId){
+    if($cateId == 0) return "";
     $sql = "SELECT name FROM category WHERE id = $cateId";
     return pdo_query_one($sql)['name'];
 }

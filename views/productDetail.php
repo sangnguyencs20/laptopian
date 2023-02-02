@@ -15,7 +15,7 @@
         </div>
 
         <div class="row mb">
-            <div class="boxtitle">Product Detail</div>
+            <div class="boxtitle">Comments</div>
             <div class="row boxcontent">
 
             </div>
